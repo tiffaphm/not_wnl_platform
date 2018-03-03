@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "npm run heroku-postbuild",
+    "server-dev": "nodemon server/index.js",
+    "react-dev": "webpack -d --watch",
     "heroku-postbuild": "NODE_ENV=production webpack --config ./webpack.config.js --progress --colors",
-    "react-dev": "webpack -d --watch"
   },
   "author": "",
   "license": "ISC",
