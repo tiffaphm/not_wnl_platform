@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run heroku-postbuild",
+    "start": "npm run heroku-postbuild && node server/index.js",
     "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
     "heroku-postbuild": "webpack --config ./webpack.config.js --progress --colors"
