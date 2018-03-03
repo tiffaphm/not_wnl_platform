@@ -7,9 +7,9 @@ const DIST_DIR = path.join(__dirname, '/client/dist');
 module.exports = {
   entry: `${SRC_DIR}/index`,
   output: {
-    path: DIST_DIR,
+    path: path.join(__dirname, '/client/dist'),
     filename: 'bundle.js',
-    publicPath: DIST_DIR,
+    publicPath: path.join(__dirname, '/client/dist')
   },
   plugins: [
     new webpack.DefinePlugin({
