@@ -7,7 +7,7 @@
     "start": "npm run heroku-postbuild",
     "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
-    "heroku-postbuild": "webpack --config ./webpack.config.js --progress --colors",
+    "heroku-postbuild": "webpack --config ./webpack.config.js --progress --colors"
   },
   "author": "",
   "license": "ISC",
