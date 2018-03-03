@@ -4,13 +4,20 @@ const webpack = require('webpack');
 const SRC_DIR = path.join(__dirname, '/client/src');
 const DIST_DIR = path.join(__dirname, '/client/dist');
 
-const config = {
+module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
   output: {
     path: path.join(__dirname, '/client/dist'),
     filename: 'bundle.js',
     publicPath: '../dist'
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
+  ],
   module: {
     loaders: [
       {
@@ -32,5 +39,3 @@ const config = {
     extensions: ['.js', '.jsx', '.css'],
   },
 };
-
-module.exports.config = config;
