@@ -1,14 +1,23 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const SRC_DIR = path.join(__dirname, '/client/src');
 const DIST_DIR = path.join(__dirname, '/client/dist');
 
 module.exports = {
-  entry: `${SRC_DIR}/index.jsx`,
+  entry: `${SRC_DIR}/index`,
   output: {
-    filename: 'bundle.js',
     path: DIST_DIR,
+    filename: 'bundle.js',
+    publicPath: DIST_DIR,
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
+  ],
   module: {
     loaders: [
       {
