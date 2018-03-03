@@ -11,13 +11,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '../dist'
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
-  ],
   module: {
     loaders: [
       {
