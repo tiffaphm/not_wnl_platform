@@ -1,10 +1,10 @@
 import React from 'react';
-import SidebarUserWelcome from './SidebarUserInfo';
+import SidebarUserWelcome from './SidebarUserWelcome';
 import '../styles/Sidebar.css';
 
 const Sidebar = () => (
   <div className="sidebar-container">
-    <SidebarUserInfo />
+    <SidebarUserWelcome />
   </div>
 );
 
