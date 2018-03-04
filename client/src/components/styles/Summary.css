@@ -14,7 +14,30 @@
 
 .upcoming-jobs-container {
   margin: 20px 10px 20px 20px;
-/*  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);*/
+  grid-template-rows: 1fr 10px 365px 30px;
+}
+
+.upcoming-jobs-title > p {
+  color: #B3B3B3;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .05rem;
+  margin: 30px 30px 0px 30px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.upcoming-jobs-list-container {
+  display: grid;
+  grid-row: 3 / span 1;
+  grid-template-columns: 15% 73% 12%;
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.upcoming-jobs-entry-container {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
 }
 
 .stats-container {
