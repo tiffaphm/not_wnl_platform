@@ -1,0 +1,28 @@
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50px;
+  color: #fff;
+  background-color: #262626;
+}
+
+.nav-title {
+  grid-column-start: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.nav-buttons {
+  grid-column-start: 3;
+  justify-self: end;
+  align-self: center;
+}
+
+.nav-buttons a {
+  padding-right: 25px;
+  color: #fff;
+}
+
+.nav-buttons a:hover {
+  color: #B7B7B7;
+}
