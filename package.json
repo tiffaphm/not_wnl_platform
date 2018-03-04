@@ -26,6 +26,7 @@
     "body-parser": "^1.17.2",
     "css-loader": "^0.28.7",
     "express": "^4.15.0",
+    "history": "^4.7.2",
     "jquery": "^3.1.1",
     "prop-types": "^15.6.0",
     "react": "^15.4.2",
