@@ -1,0 +1,134 @@
+.summary-container {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 70% 30%;
+}
+
+.summary-view {
+  display: grid;
+  grid-area: 1;
+  background-color: #fff;
+  border-radius: .15rem;
+  box-shadow: 0 1px 1px 0 #DADADA;
+}
+
+.upcoming-jobs-container {
+  margin: 20px 10px 20px 20px;
+  grid-template-rows: 1fr 10px 365px 30px;
+}
+
+.upcoming-jobs-title > p {
+  color: #B3B3B3;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .05rem;
+  margin: 30px 30px 0px 30px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.upcoming-jobs-list-container {
+  display: grid;
+  grid-row: 3 / span 1;
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.upcoming-jobs-entry-container {
+  display: grid;
+  grid-template-columns: 15% 73% 12%;
+  font-size: 11px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.upcoming-jobs-entry-container:hover {
+  background-color: #FBFBFB;
+}
+
+/* upcoming jobs lead */
+
+.upcoming-job-entry-lead-wrapper {
+  display: grid;
+  grid-column: 1 / span 1;
+  justify-items: start;
+  border-right: 1px solid #EAEAEA;
+}
+
+.upcoming-job-type {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  align-self: end;
+  width: 100%;
+  background-color: var(--base);
+  border-radius: 40px 0 0 40px;
+  padding: 3px 0 3px;
+}
+
+.upcoming-job-type span, .upcoming-job-date {
+  padding-left: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.upcoming-job-date {
+  color: #B3B3B3;
+  font-weight: 300;
+  font-size: .55rem;
+  padding-top: 2px;
+}
+
+/* upcoming job details */
+
+.upcoming-job-details-wrapper {
+  display: grid;
+  grid-column: 2 / span 1;
+  padding-left: 10px;
+}
+
+.upcoming-job-entry-title {
+  align-self: end;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.upcoming-job-details-brief {
+  color: #A0A0A0;
+  font-weight: 300;
+}
+
+/* button to expand upcoming job details */
+
+.upcoming-job-details-button-wrapper {
+  display: grid;
+  grid-column: 3 / span 1;
+  justify-items: center;
+  align-items: center;
+}
+
+button.expand-button {
+  background-color: transparent;
+  border: none;
+  border-radius: .15rem;
+  border: 1px solid var(--base);
+  padding: 10px;
+  color: var(--base);
+}
+
+button.expand-button:hover, button.expand-button:active, button.expand-button:focus {
+  background-color: var(--base);
+  border: none;
+  border-radius: .15rem;
+  padding: 10px;
+  color: #fff;
+  outline: 0;
+}
+
+button.expand-button > svg {
+  padding-right: 5px;
+}
+
+.stats-container {
+  margin: 20px 20px 20px 10px;
+}

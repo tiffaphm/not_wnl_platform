@@ -1,12 +1,13 @@
 .dashboard-container {
   height: 96vh;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+  grid-template-columns: 240px repeat(3, 1fr) 1fr;
+  grid-template-rows: repeat(5, 1fr) 50px;
   grid-template-areas:
-    "sidebar upcoming upcoming upcoming stats stats"
-    "sidebar upcoming upcoming upcoming stats stats"
-    "sidebar details details details details details"
-    "sidebar details details details details details"
-    "sidebar details details details details details";
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar bottom bottom bottom bottom"
+    "sidebar bottom bottom bottom bottom"
+    "sidebar bottom bottom bottom bottom";
 }
