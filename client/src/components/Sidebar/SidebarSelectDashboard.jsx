@@ -3,7 +3,7 @@ import '../styles/Sidebar.css';
 
 const SidebarSelectDashboard = (props) => (
   <div className="sidebar-select-dashboard sidebar-menu-item sidebar-active" onClick={props.selectActiveComponent}>
-    <p onClick={e => e.stopPropagation()}>DASHBOARD</p>
+    <p onClick={e => e.stopPropagation()}><i className="fas fa-columns"></i>DASHBOARD</p>
   </div>
 );
 
