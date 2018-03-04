@@ -8,7 +8,7 @@
 .sidebar-welcome-container {
   display: grid;
   grid-row: 1 / 2;
-  background-color: #FBDC4A;
+  background-color: var(--base);
 }
 
 .sidebar-welcome-content {
