@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 :root {
   --base: #FBDC4A;
 }
 
 body {
   background-color: #F4F4F4;
+  font-family: 'Poppins', 'Raleway', 'Open Sans', sans-serif;
   margin: 0;
 }
