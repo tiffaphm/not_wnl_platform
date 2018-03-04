@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SidebarUserWelcome from './SidebarUserWelcome';
-import SidebarSelectDashboard from './SidebarSelectDashboard';
+import SidebarSelectSummary from './SidebarSelectSummary';
 import SidebarSelectJobListings from './SidebarSelectJobListings';
 import SidebarSelectJobHistory from './SidebarSelectJobHistory';
 import SidebarSelectMessages from './SidebarSelectMessages';
@@ -12,7 +12,7 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeComponent: 'sidebar-select-dashboard',
+      activeComponent: 'sidebar-select-summary',
     };
   }
 
@@ -34,7 +34,7 @@ class Sidebar extends Component {
     return (
       <div className="sidebar-container">
         <SidebarUserWelcome />
-        <SidebarSelectDashboard selectActiveComponent={this.selectActiveComponent} />
+        <SidebarSelectSummary selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectJobListings selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectJobHistory selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectMessages selectActiveComponent={this.selectActiveComponent} />
