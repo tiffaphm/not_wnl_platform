@@ -1,7 +1,22 @@
 .summary-container {
   display: grid;
-  grid-area: summary;
-  margin: 20px;
-/*  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);*/
+  grid-area: main;
+  grid-template-columns: 70% 30%;
+}
+
+.summary-view {
+  display: grid;
+  grid-area: 1;
   background-color: #fff;
+  border-radius: .15rem;
+  box-shadow: 0 1px 1px 0 #DADADA;
+}
+
+.upcoming-jobs-container {
+  margin: 20px 10px 20px 20px;
+/*  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);*/
+}
+
+.stats-container {
+  margin: 20px 20px 20px 10px;
 }

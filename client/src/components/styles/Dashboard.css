@@ -4,10 +4,10 @@
   grid-template-columns: 240px repeat(3, 1fr) 1fr;
   grid-template-rows: repeat(5, 1fr) 50px;
   grid-template-areas:
-    "sidebar summary summary summary stats"
-    "sidebar summary summary summary stats"
-    "sidebar summary summary summary stats"
-    "sidebar details details details details"
-    "sidebar details details details details"
-    "sidebar details details details details";
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar bottom bottom bottom bottom"
+    "sidebar bottom bottom bottom bottom"
+    "sidebar bottom bottom bottom bottom";
 }
