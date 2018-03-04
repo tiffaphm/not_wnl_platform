@@ -1,7 +1,7 @@
 .sidebar-container {
   grid-area: sidebar;
   display: grid;
-  grid-template-rows: 100px repeat(4, 75px) repeat(3, 1fr);
+  grid-template-rows: 100px repeat(4, 60px) repeat(3, 1fr);
   background-color: #333333;
 }
 
@@ -10,6 +10,8 @@
   grid-row: 1 / 2;
   background-color: var(--base);
 }
+
+/* sidebar welcome */
 
 .sidebar-welcome-content {
   display: flex;
@@ -49,4 +51,30 @@
 .sidebar-username {
   font-weight: 700;
   font-size: 13px;
+}
+
+/* sidebar menu items */
+
+.sidebar-menu-item {
+  display: grid;
+  grid-row: 2 / span 1;
+  font-size: 16px;
+  transition: background-color .2s ease-in-out,
+    box-shadow .2s ease-in-out;
+}
+
+.sidebar-menu-item > p {
+  color: #fff;
+  justify-self: center;
+  align-self: center;
+}
+
+.sidebar-active, .sidebar-menu-item:hover {
+  background-color: #262626;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .6);
+  border-left: 4px solid var(--base);
+}
+
+.sidebar-menu-item:hover {
+  color: var(--base);
 }
