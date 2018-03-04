@@ -13,6 +13,4 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client/dist')));
 // app.use('/', router);
 
-app.listen(PORT, () => {
-  console.log(`server is up and listening on ${PORT}!`);
-});
+app.listen(PORT);
