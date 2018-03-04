@@ -1,0 +1,7 @@
+.upcoming-jobs-container {
+  display: grid;
+  grid-area: upcoming;
+  margin: 20px;
+/*  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);*/
+  background-color: #fff;
+}
