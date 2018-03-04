@@ -1,0 +1,90 @@
+.sidebar-container {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);
+  background-color: #333333;
+}
+
+.sidebar-welcome-container {
+  display: grid;
+  grid-row: 1 / 2;
+  background-color: var(--base);
+}
+
+/* sidebar welcome */
+
+.sidebar-welcome-content {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  width: 65%;
+  height: 50px;
+}
+
+.sidebar-welcome-picture {
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
+}
+
+.sidebar-welcome-picture > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sidebar-welcome-user-info {
+  width: 65%;
+}
+
+.sidebar-welcome-user-info > p {
+  margin: 0;
+}
+
+.sidebar-welcome-message {
+  font-size: 11px;
+  color: #1C1C1C;
+  opacity: 0.5;
+}
+
+.sidebar-username {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* sidebar menu items */
+
+.sidebar-menu-item {
+  display: grid;
+  font-size: 14px;
+  border-left: 5px solid transparent;
+  transition: background-color .2s ease-in-out,
+    box-shadow .2s ease-in-out;
+}
+
+.sidebar-menu-item p {
+  color: rgba(226, 226, 226, 0.7);
+  padding-top: 3px;
+  padding-left: 25%;
+  justify-self: left;
+  align-self: center;
+}
+
+.sidebar-menu-item svg {
+  padding-right: 10px;
+}
+
+div.sidebar-active, .sidebar-menu-item:hover {
+  background-color: #262626;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .6);
+  border-left: 5px solid var(--base);
+}
+
+div.sidebar-menu-item:hover p, .sidebar-active p {
+  color: var(--base);
+}
+
+.sidebar-select-dashboard {
+  grid-row: 2 / span 1;
+}
