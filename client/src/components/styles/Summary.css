@@ -29,16 +29,73 @@
 .upcoming-jobs-list-container {
   display: grid;
   grid-row: 3 / span 1;
-  grid-template-columns: 15% 73% 12%;
   grid-template-rows: repeat(5, 1fr);
   margin-left: 30px;
   margin-right: 30px;
 }
 
 .upcoming-jobs-entry-container {
+  display: grid;
+  grid-template-columns: 15% 73% 12%;
   grid-row: 1 / span 1;
-  grid-column: 1 / span 3;
+  font-size: 11px;
 }
+
+/* upcoming jobs lead */
+
+.upcoming-job-entry-lead-wrapper {
+  display: grid;
+  grid-column: 1 / span 1;
+  justify-items: start;
+  border-right: 1px solid #DCDCDC;
+}
+
+.upcoming-job-type {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  align-self: end;
+  width: 100%;
+  background-color: var(--base);
+  border-radius: 40px 0 0 40px;
+}
+
+.upcoming-job-type span, .upcoming-job-date {
+  padding-left: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.upcoming-job-date {
+  color: #B3B3B3;
+  font-weight: 300;
+  font-size: .55rem;
+  padding-top: 2px;
+}
+
+.upcoming-job-details-wrapper {
+  z-index: 1;
+}
+
+/* upcoming job details */
+.upcoming-job-details-wrapper {
+  display: grid;
+  grid-column: 2 / span 1;
+  padding-left: 10px;
+}
+
+.upcoming-job-entry-title {
+  align-self: end;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.upcoming-job-details-brief {
+  color: #A0A0A0;
+  font-weight: 300;
+}
+
 
 .stats-container {
   margin: 20px 20px 20px 10px;
