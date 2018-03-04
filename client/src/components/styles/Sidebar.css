@@ -57,16 +57,17 @@
 
 .sidebar-menu-item {
   display: grid;
-  font-size: 16px;
+  font-size: 14px;
   border-left: 4px solid transparent;
   transition: background-color .2s ease-in-out,
     box-shadow .2s ease-in-out;
 }
 
-.sidebar-menu-item > p {
+.sidebar-menu-item p {
   color: #fff;
-  padding-left: 4px;
-  justify-self: center;
+  padding-top: 3px;
+  padding-left: 35%;
+  justify-self: left;
   align-self: center;
 }
 
@@ -76,7 +77,7 @@
   border-left: 4px solid var(--base);
 }
 
-.sidebar-menu-item:hover {
+div.sidebar-menu-item:hover p, .sidebar-active p {
   color: var(--base);
 }
 
