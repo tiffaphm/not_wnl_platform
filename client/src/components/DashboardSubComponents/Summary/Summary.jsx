@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/Summary.css';
 
-const UpcomingJobs = () => (
+const Summary = () => (
   <div className="summary-container">
     jobz
   </div>
 );
 
-export default UpcomingJobs;
+export default Summary;
