@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SidebarUserWelcome from './SidebarUserWelcome';
 import SidebarSelectDashboard from './SidebarSelectDashboard';
+import SidebarSelectJobListings from './SidebarSelectJobListings';
 import '../styles/Sidebar.css';
 
 class Sidebar extends Component {
@@ -18,6 +19,10 @@ class Sidebar extends Component {
     if (event.target.className !== this.state.activeComponent) {
       currentActive.classList.remove('sidebar-active');
       event.target.classList.add('sidebar-active');
+
+      this.setState({
+        activeComponent: event.target.className
+      })
     };
   }
 
@@ -26,6 +31,7 @@ class Sidebar extends Component {
       <div className="sidebar-container">
         <SidebarUserWelcome />
         <SidebarSelectDashboard selectActiveComponent={this.selectActiveComponent} />
+        <SidebarSelectJobListings selectActiveComponent={this.selectActiveComponent} />
       </div>
     );
   }
