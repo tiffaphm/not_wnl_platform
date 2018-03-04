@@ -1,8 +1,9 @@
 import React from 'react';
+import './styles/Sidebar.css';
 
 const Sidebar = () => (
   <div className="sidebar-container">
-    <Nav />
+    hi
   </div>
 );
 
