@@ -1,7 +1,7 @@
 .nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 5vh;
+  height: 40px;
   color: #fff;
   background-color: #262626;
 }
