@@ -1,7 +1,7 @@
 .sidebar-container {
   grid-area: sidebar;
   display: grid;
-  grid-template-rows: 100px repeat(4, 60px) repeat(3, 1fr);
+  grid-template-rows: 100px repeat(5, 60px) repeat(2, 1fr);
   background-color: #333333;
 }
 
@@ -71,7 +71,7 @@
   align-self: center;
 }
 
-.sidebar-active, .sidebar-menu-item:hover {
+div.sidebar-active, .sidebar-menu-item:hover {
   background-color: #262626;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .6);
   border-left: 4px solid var(--base);
