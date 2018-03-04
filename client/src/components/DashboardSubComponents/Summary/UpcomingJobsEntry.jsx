@@ -20,7 +20,10 @@ const UpcomingJobsEntry = () => (
       </span>
     </div>
     <div className="upcoming-job-details-button-wrapper">
-      <button className="expand-button">MORE</button>
+      <button className="expand-button">
+        <i className="far fa-caret-square-down"></i>
+        MORE
+      </button>
     </div>
   </div>
 );
