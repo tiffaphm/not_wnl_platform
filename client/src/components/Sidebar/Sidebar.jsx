@@ -5,6 +5,7 @@ import SidebarSelectDashboard from './SidebarSelectDashboard';
 import SidebarSelectJobListings from './SidebarSelectJobListings';
 import SidebarSelectJobHistory from './SidebarSelectJobHistory';
 import SidebarSelectMessages from './SidebarSelectMessages';
+import SidebarSelectProfile from './SidebarSelectProfile';
 import '../styles/Sidebar.css';
 
 class Sidebar extends Component {
@@ -16,6 +17,7 @@ class Sidebar extends Component {
   }
 
   selectActiveComponent = (event) => {
+    // DEBT: this function will only run if user clicks on the div, not the actual text
     const currentActive = ReactDOM.findDOMNode(this).getElementsByClassName(this.state.activeComponent)[0];
 
     if (event.target.className !== this.state.activeComponent) {
@@ -36,6 +38,7 @@ class Sidebar extends Component {
         <SidebarSelectJobListings selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectJobHistory selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectMessages selectActiveComponent={this.selectActiveComponent} />
+        <SidebarSelectProfile selectActiveComponent={this.selectActiveComponent} />
       </div>
     );
   }
