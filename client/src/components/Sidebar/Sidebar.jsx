@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import SidebarUserWelcome from './SidebarUserWelcome';
 import SidebarSelectDashboard from './SidebarSelectDashboard';
 import SidebarSelectJobListings from './SidebarSelectJobListings';
+import SidebarSelectJobHistory from './SidebarSelectJobHistory';
 import '../styles/Sidebar.css';
 
 class Sidebar extends Component {
@@ -32,6 +33,7 @@ class Sidebar extends Component {
         <SidebarUserWelcome />
         <SidebarSelectDashboard selectActiveComponent={this.selectActiveComponent} />
         <SidebarSelectJobListings selectActiveComponent={this.selectActiveComponent} />
+        <SidebarSelectJobHistory selectActiveComponent={this.selectActiveComponent} />
       </div>
     );
   }
