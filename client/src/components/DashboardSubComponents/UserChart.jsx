@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AreaChart, Area, ResponsiveContainer, Tooltip } from 'recharts';
+import { AreaChart, Area, XAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import '../styles/UserChart.css';
 
 class UserChart extends Component {
@@ -23,11 +23,14 @@ class UserChart extends Component {
     return (
       <div className="user-chart-container">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={this.state.data} margin={{left: -4, right: 2}}>
+          <AreaChart data={this.state.data} margin={{left: -4}}>
             <Tooltip />
+            <XAxis dataKey="name"/>
             <Area dataKey="amt" stroke={this.state.colors[0]} fill={this.state.colors[0]} strokeWidth={2} activeDot={{r: 8}} />
           </AreaChart>
         </ResponsiveContainer>
+        <div className="user-chart-footer">
+        </div>
       </div>
     );
   }

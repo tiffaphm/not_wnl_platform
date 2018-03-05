@@ -3,3 +3,13 @@
   grid-column: bottom-start / bottom-end;
   /*background-color: blue;*/
 }
+
+.user-chart-footer {
+  position: fixed;
+  height: 40px;
+  background-color: #262626;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  width: calc(100% - 240px);
+}
