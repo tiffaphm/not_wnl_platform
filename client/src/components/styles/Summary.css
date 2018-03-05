@@ -65,7 +65,7 @@
   padding: 3px 0 3px;
 }
 
-.upcoming-job-type span, .upcoming-job-date {
+.upcoming-job-type span, span.upcoming-job-date {
   padding-left: 6px;
   overflow: hidden;
   white-space: nowrap;

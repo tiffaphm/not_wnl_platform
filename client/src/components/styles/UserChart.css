@@ -1,0 +1,5 @@
+.user-chart-container {
+  grid-row: bottom-start / bottom-end;
+  grid-column: bottom-start / bottom-end;
+  /*background-color: blue;*/
+}
