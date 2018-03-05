@@ -17,7 +17,7 @@
   grid-template-rows: 1fr 10px 365px 30px;
 }
 
-.upcoming-jobs-title > p {
+.upcoming-jobs-title > p, .stats-title > p {
   color: #B3B3B3;
   font-size: 11px;
   font-weight: 900;
@@ -129,6 +129,44 @@ button.expand-button > svg {
   padding-right: 5px;
 }
 
+/* user stats container */
+
 .stats-container {
   margin: 20px 20px 20px 10px;
+  grid-template-rows: 1fr 10px 365px 30px;
 }
+
+.stats-list-container {
+  display: grid;
+  grid-row: 3 / span 1;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.stats-entry {
+  margin: 0 30px 4px 30px;
+  display: grid;
+  grid-template-columns: 2fr;
+  align-items: center;
+  letter-spacing: .15rem;
+  font-size: 22px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.stats-number {
+  color: var(--base);
+}
+
+.stats-entry span:nth-child(1) {
+  grid-area: 1;
+  justify-self: start;
+}
+
+.stats-entry span:nth-child(2) {
+  grid-area: 1;
+  justify-self: end;
+}
+
+.stats-jobs-completed {
+  font-size: 18px;
+}
+
